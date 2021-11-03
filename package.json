@@ -1,0 +1,25 @@
+{
+  "name": "sena",
+  "version": "1.0.0",
+  "description": "This repository has the code to support a tutorial that I created on Medium called Create a FullStack React/Express/MongoDB app running in isolated Docker containers . ___",
+  "main": "index.js",
+  "scripts": {
+    "api": "cd api && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run api\" \" npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Urrego45@bitbucket.org/FabricaSoft21/senamecuida.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/FabricaSoft21/senamecuida/issues"
+  },
+  "homepage": "https://bitbucket.org/FabricaSoft21/senamecuida#readme",
+  "dependencies": {
+    "react-select": "^5.1.0"
+  }
+}

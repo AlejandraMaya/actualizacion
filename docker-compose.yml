@@ -1,0 +1,46 @@
+version: "3"
+services:
+    client:
+        build:
+          context: .
+          dockerfile: ./client/Dockerfile 
+        image: node_front
+        restart: unless-stopped
+        ports:
+            - "3000:3000"
+        working_dir: /client/src/app
+        volumes:
+            - ./client:/client
+        entrypoint: ["npm", "start"]
+        links:
+            - api
+        networks:
+            - webappnetwork
+    api:
+        build: 
+          context: .
+          dockerfile: ./api/Dockerfile
+        image: node_back
+        restart: unless-stopped
+        ports:
+            - "3008:3008"
+        volumes:
+            - ./api:/api
+        depends_on:
+            - mongodb
+        networks:
+            - webappnetwork
+    mongodb:
+        image: mongo
+        restart: unless-stopped
+        container_name: mongodb
+        volumes:
+            - ./data-node:/data/db
+        ports:
+            - 27017:27017
+        #command: mongod --noauth --smallfiles
+        networks:
+            - webappnetwork
+networks:
+    webappnetwork:
+        driver: bridge

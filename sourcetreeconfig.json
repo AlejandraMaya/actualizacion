@@ -1,0 +1,33 @@
+{
+  "$id": "29",
+  "AutoRefresh": true,
+  "AutoRefreshRemotes": true,
+  "CommitTextLinks": null,
+  "DraftCommitMsg": "",
+  "IncomingSavedCount": 3,
+  "LastCheckedRemotes": "2021-11-03T15:04:33.361553-05:00",
+  "LastUsedView": 0,
+  "LogBranchFilterIndex": 0,
+  "OutgoingSavedCount": 2,
+  "SidebarExpandedItems": [
+    "Branches"
+  ],
+  "SidebarWidth": 210.0,
+  "SubtreeLinks": [],
+  "NeedsLargeFilesPull": false,
+  "RemoteProjectLinks": [
+    {
+      "$id": "30",
+      "BaseUrl": "https://bitbucket.org/",
+      "Identifier": "",
+      "RemoteName": "origin",
+      "Type": 0,
+      "Username": "mayaleja",
+      "CloneUrl": "https://mayaleja@bitbucket.org/FabricaSoft21/senamecuida.git",
+      "ProjectUrl": "https://bitbucket.org/FabricaSoft21/senamecuida",
+      "AccountId": "mayaleja@bitbucket.org",
+      "AvatarUrl": "https://bytebucket.org/ravatar/%7Ba89061b4-e388-4b72-8bce-572c7a57c5e2%7D?ts=default",
+      "DisplayName": "origin: https://bitbucket.org/"
+    }
+  ]
+}
